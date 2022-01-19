@@ -9,7 +9,7 @@ export class text{
     
     navigate(url){
         cy.visit(url)
-       // cy.get(':nth-child(7) > .mat-button-wrapper').click();
+      
         cy.wait(3000);
     }
     
@@ -22,7 +22,7 @@ export class text{
     login(){
 
         let url1=links.link1;
-        this.navigate(url1)
+        this.navigate(url1) //sends url1 value to Navigate Function(url variable)
         this.validEmailAddress()
         this.password()
         this.onSubmit()
