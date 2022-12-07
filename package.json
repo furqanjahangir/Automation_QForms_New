@@ -11,8 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.1.0",
-    "cypress": "^9.2.0",
-    "cypress-mochawesome-reporter": "^2.3.0",
+    "cypress": "^11.0.1",
+    "cypress-mochawesome-reporter": "^3.1.0",
     "cypress-xpath": "^1.6.2"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.3.1"
   }
 }

@@ -24,7 +24,7 @@ var locators={
     sendemail:'.mat-button-wrapper',
     formmanage:'[fxlayoutalign="start"]',
     backbutton:'.back-btn',
-    formbuilder:'[routerlink="/qforms/form-builder/0"] > div',
+    formbuilder:'[routerlinkactive="active"] > div > h5',
     createnewuser:'#button_add_user',
     rolelist:'[fxflex="20"]',
     newrole:'#button_add_user',
@@ -48,11 +48,16 @@ var locators={
     form_control:'#headingFormControls > .panel-title > .collapsed',
     text:'#textbox > .col-xs-10',
     number:'#number > .col-xs-10',
-
-
+    date:'#date > .col-xs-10',
+    group_control:':nth-child(23) > :nth-child(1) > .col-xs-10',
 
     //#Form Properties Locators
     form_properties_icon:'.mat-button-wrapper > .fa',
+    form_security_header:'#headingPropertiesFormSecurity > .panel-title > .collapsed',
+    enable_password_protection:'#propertiesFormSecurityCollapse > .panel-body > .mb-10 > .toggle-switchy > .toggle',
+    form_style_header:'#headingPropertiesFormStyle > .panel-title > .collapsed',
+    hide_question_labels:'.custom-vertical-spacer > .toggle-switchy > .toggle > .switch',
+    question_default_fieldsize:'#propertiesFormStyling > .panel-body > .mt-10 > .form-control',
     form_name:'#propertiesGeneralCollapse > .panel-body > :nth-child(1) > .form-control',
     form_description:':nth-child(2) > .form-control',
     form_type_dropdown:':nth-child(3) > .form-control',
@@ -99,6 +104,12 @@ var locators={
     show_timer:':nth-child(5) > .toggle-switchy > .toggle ',
 
     //#Form Canvas Locators
+    add_new_layout:'.font-16 > .mat-mini-fab',
+    single_column_section:'[data-structure="10"]',
+    single_column_section_row:'.qforms-widget-wrap > .qforms-empty-view > .qforms-first-add',
+    two_column_section:'[data-structure="20"]',
+    two_column_section_row1:'.qforms-element-dbd00 > .qforms-column-wrap > .qforms-widget-wrap > .qforms-empty-view > .qforms-first-add',
+    two_column_section_row2:'.qforms-element-dbd01 > .qforms-column-wrap > .qforms-widget-wrap > .qforms-empty-view > .qforms-first-add',
     save_form:'.example-button-row > .mat-primary',
     save_close_form:'.example-button-row > .mat-accent',
     close_form:'.example-button-row > .mat-warn',

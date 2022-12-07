@@ -25,7 +25,9 @@ export class text{
         this.navigate(url1) //sends url1 value to Navigate Function(url variable)
         this.validEmailAddress()
         this.password()
+        
         this.onSubmit()
+        cy.wait(4000)
        }
       
     enterLastName(){
@@ -108,6 +110,7 @@ export class text{
         cy.get(userD).click()
         cy.get(loggOut).click()
        }
+       
     generateString(length) {
        
         const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';

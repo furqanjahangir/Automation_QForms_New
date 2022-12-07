@@ -1,9 +1,9 @@
 var links={
 
-     link1:'https://test.qforms.co',
+     link1:'https://dev.qforms.co',
      expectedlink:'https://test.qforms.co/#/login',
      exdashboardlink:'https://test.qforms.co/#/dashboard',
-     redirecturl:'https://test.qforms.co/#/qforms/select-template'
+     redirecturl:'https://www.google.com/'
 
 }
 export {links}
